@@ -1,25 +1,80 @@
-## Hello, I'm Sumbal Ilyas 👋
+# Telco Customer Churn Prediction
 
-Welcome to my GitHub profile! I specialize in **Machine Learning (ML)**, and **Natural Language Processing (NLP)**, **Artificial Intelligence (AI)**, **Deep Learning**. I am passionate about developing and deploying innovative AI models and solutions that can tackle real-world challenges.
+This project focuses on predicting customer churn for a telecommunications company using machine learning algorithms. The goal is to build a model that can predict whether a customer will leave the service (churn) based on various customer attributes such as their service usage, demographic information, and subscription details.
 
-### 🚀 About Me:
-- 🔭 **Currently working on**: Enhancing machine learning models and exploring advanced techniques in deep learning and NLP.
-- 🌱 **Currently learning**: Fine-tuning large models, specifically focusing on **transformers** and **large language models (LLMs)**.
-- 👯 **Looking to collaborate on**: Open-source projects in the AI/ML domain, especially those that focus on real-world applications of deep learning and NLP.
-- 🤔 **Looking for help with**: Improving model performance, hyperparameter tuning, and exploring novel NLP applications.
-- 💬 **Ask me about**: **Python programming**, **machine learning algorithms**, **deep learning frameworks**, and **NLP**.
-- 📫 **How to reach me**: [LinkedIn](https://www.linkedin.com/in/sumbal-ilyas).
-- ⚡ **Fun fact**: I love learning about emerging AI technologies and working on projects that have the potential to make an impact.
+## Dataset
 
-### 🌐 Explore My Work:
-- **[Google Colab Notebooks](https://colab.research.google.com/github/your-username/your-repository)**: Open my Colab notebooks to explore machine learning and AI models in action
+The dataset contains the following columns:
 
-### 🛠️ Technologies & Tools:
-- **Programming Languages**: Python
-- **Libraries & Frameworks**: TensorFlow, Keras, PyTorch, Scikit-learn, NLTK, spaCy
-- **Tools**: Google Colab, Jupyter Notebook, Git, GitHub
-- **Databases**: MySQL, MongoDB
+- **customerID**: Unique identifier for each customer
+- **gender**: Gender of the customer
+- **SeniorCitizen**: Whether the customer is a senior citizen (1 = Yes, 0 = No)
+- **Partner**: Whether the customer has a partner (Yes/No)
+- **Dependents**: Whether the customer has dependents (Yes/No)
+- **tenure**: Number of months the customer has been with the company
+- **PhoneService**: Whether the customer has phone service (Yes/No)
+- **MultipleLines**: Whether the customer has multiple lines (Yes/No)
+- **InternetService**: Type of internet service the customer has (DSL/Fiber optic/No internet service)
+- **OnlineSecurity**: Whether the customer has online security (Yes/No/No internet service)
+- **OnlineBackup**: Whether the customer has online backup (Yes/No/No internet service)
+- **DeviceProtection**: Whether the customer has device protection (Yes/No/No internet service)
+- **TechSupport**: Whether the customer has tech support (Yes/No/No internet service)
+- **StreamingTV**: Whether the customer has streaming TV service (Yes/No/No internet service)
+- **StreamingMovies**: Whether the customer has streaming movies service (Yes/No/No internet service)
+- **Contract**: Type of contract the customer has (Month-to-month, One year, Two year)
+- **PaperlessBilling**: Whether the customer has paperless billing (Yes/No)
+- **PaymentMethod**: Method of payment (Electronic check, Mailed check, Bank transfer, Credit card)
+- **MonthlyCharges**: Monthly charges for the customer
+- **TotalCharges**: Total charges incurred by the customer
+- **Churn**: Whether the customer churned (Yes/No)
 
----
+## Objective
 
-Feel free to explore my repositories, check out my work, and reach out if you're interested in collaborating or discussing AI/ML projects!
+The objective of this project is to predict whether a customer will churn or not based on their service and demographic features. The machine learning models used include:
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+- XGBoost Classifier
+
+## Approach
+
+1. **Data Preprocessing**:
+   - Cleaned the data by handling missing values, encoding categorical variables, and scaling numerical features.
+   
+2. **Exploratory Data Analysis (EDA)**:
+   - Visualized the relationships between different features and the target variable (`Churn`).
+   - Checked for any imbalances in the dataset and handled them.
+
+3. **Model Training**:
+   - Split the data into training and testing sets.
+   - Trained multiple machine learning models on the dataset and evaluated them using accuracy, precision, recall, F1-score, and confusion matrices.
+
+4. **Evaluation**:
+   - Evaluated the models using metrics like accuracy and classification report.
+
+## Results
+
+- **Logistic Regression**: Accuracy: 79.2%
+- **Decision Tree Classifier**: Accuracy: 79.4%
+- **Random Forest Classifier**: Accuracy: 80.3%
+- **XGBoost Classifier**: Accuracy: 81.1%
+
+The **XGBoost** model showed the best performance in predicting customer churn.
+
+## Technologies Used
+
+- **Python**: The programming language used for implementing the models.
+- **Libraries**: 
+  - `pandas` for data manipulation
+  - `numpy` for numerical computations
+  - `matplotlib` and `seaborn` for data visualization
+  - `sklearn` for machine learning algorithms and metrics
+  - `xgboost` for the XGBoost model
+
+## How to Run
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/your-username/telco-customer-churn.git
