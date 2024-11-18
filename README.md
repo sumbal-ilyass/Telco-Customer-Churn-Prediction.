@@ -80,7 +80,7 @@ The objective of this project is to predict whether a customer will churn or not
 
 ## How to Run
 
-1. Clone this repository:
+1. Clone this repository: 
 
 ```bash
 git clone https://github.com/your-username/telco-customer-churn.git
