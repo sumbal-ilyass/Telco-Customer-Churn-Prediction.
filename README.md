@@ -54,13 +54,12 @@ The objective of this project is to predict whether a customer will churn or not
    - Evaluated the models using metrics like accuracy and classification report.
 
 ## Results
-
-- **Logistic Regression**: Accuracy: 79.2%
-- **Decision Tree Classifier**: Accuracy: 79.4%
-- **Random Forest Classifier**: Accuracy: 80.3%
-- **XGBoost Classifier**: Accuracy: 81.1%
-
-The **XGBoost** model showed the best performance in predicting customer churn.
+Model	Accuracy	Precision	Recall	F1 Score
+Logistic Regression	0.82	0.68	0.58	0.63
+Decision Tree	0.72	0.48	0.50	0.49
+Random Forest	0.80	0.66	0.48	0.56
+XGBoost	0.78	0.61	0.50	0.55
+The Logistic Regression model performed the best, with an accuracy of 81.76% and a relatively high F1 score of 0.63.
 
 ## Technologies Used
 
